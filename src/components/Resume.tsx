@@ -5,31 +5,35 @@ function Resume() {
     <div className="resume-wrap">
       <div className="mid_wrapper">
         <div className="my_card">
+          <div className="headshot">
+            <img src="portfolio/headshot.jpeg" alt="" />
+          </div>
+
           <div className="fullname">
-            <h1>Andre Tuyen Nguyen</h1>
+            <span>Andre Tuyen Nguyen</span>
             <div className="title">
               Cross-Platform Developer (Web & Mobile Apps)
             </div>
           </div>
           <div className="education_card">
-            <h3>Education</h3>
+            <span className="material-symbols-outlined">school</span>
             <div>
-              <strong>Bachelor of Science in Computer Science.</strong>
+              <strong>B.S Computer Science.</strong>
               <div>California State University Northridge.</div>
             </div>
           </div>
           <div className="contact_card">
-            <h3>Contact</h3>
-            <div className="email">
-              <strong>email: </strong>dtuyen.ng@gmail.com
+            <span className="material-symbols-outlined">perm_phone_msg</span>
+            <div>
+              <div className="email">dtuyen.ng@gmail.com</div>
+              <div className="phone">310-598-0096</div>
+              <div className="website"></div>
             </div>
-            <div className="phone">
-              <strong>phone: </strong>310-598-0096
-            </div>
-            <div className="website">
-              <strong>url: </strong>
-              <a href="">http://www.mywebsite.com</a>
-            </div>
+          </div>
+
+          <div className="links_card">
+            <img src="portfolio/linkedinIcon.png" alt="" />
+            <img src="portfolio/GitHub-logo.png" alt="" />
           </div>
         </div>
         <div className="aboutme_card">
@@ -53,7 +57,8 @@ function Resume() {
         <h3 className="skill_card_title">Skills / Technologies</h3>
         <div className="skill_item_wrapper">
           <div className="skill_item">
-            <h4>Mobile</h4>
+            <img src="portfolio/software.png" alt="" />
+            <h4>Mobile Development</h4>
             <ul>
               <li>Swift, SwiftUI ()</li>
               <li>CoreData, SwiftData ()</li>
@@ -61,6 +66,8 @@ function Resume() {
             </ul>
           </div>
           <div className="skill_item">
+            <img src="portfolio/front-end.png" alt="" />
+
             <h4>Front-End, UI/UX</h4>
             <ul>
               <li>React</li>
@@ -73,6 +80,7 @@ function Resume() {
           </div>
 
           <div className="skill_item">
+            <img src="portfolio/technology.png" alt="" />
             <h4>Back-End</h4>
             <ul>
               <li>NodeJS</li>
