@@ -17,7 +17,7 @@ function Menu() {
         </Link>
       </div>
 
-      <span className="menu-item-label">Latest Projects: </span>
+      <span className="menu-item-latest"></span>
 
       <div className="menu-item">
         <Link className="links" to="/aboutme">
