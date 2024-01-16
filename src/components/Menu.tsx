@@ -12,8 +12,10 @@ function Menu() {
       </div>
       <div className="menu-item">
         <Link className="links" to="/contact">
-          <span className="material-symbols-outlined">mail</span>
-          <span className="menu-item-label">Contact</span>
+          <span className="material-symbols-outlined">
+            format_list_bulleted
+          </span>
+          <span className="menu-item-label">Experience</span>
         </Link>
       </div>
 

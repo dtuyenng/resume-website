@@ -62,7 +62,9 @@ function Resume() {
             <ul>
               <li>Swift, SwiftUI ()</li>
               <li>CoreData, SwiftData ()</li>
+              <li>Apple Xcode</li>
               <li>React Native (/android)</li>
+              <li>Android Studio</li>
             </ul>
           </div>
           <div className="skill_item">

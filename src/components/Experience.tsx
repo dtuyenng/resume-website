@@ -1,12 +1,9 @@
 import React from "react";
 
-function Timeline() {
+function Experience() {
   return (
-    <>
-      {" "}
-      <div className="experience_card">
-        <h3 className="experience_card_title">Experience (expand)</h3>
-      </div>
+    <div className="experience_card">
+      <h3 className="experience_card_title">Experience (expand)</h3>
       <div className="timeline__wrapper">
         <div className="timeline__border">
           <div className="timeline__dot"></div>
@@ -48,8 +45,8 @@ function Timeline() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
-export default Timeline;
+export default Experience;
