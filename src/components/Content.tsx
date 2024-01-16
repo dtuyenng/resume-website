@@ -1,11 +1,5 @@
-import React from "react";
-import Portfolio from "./Portfolio";
-import AboutMe from "./AboutMe";
-import Pricing from "./Pricing";
-import Welcome from "./Welcome";
-import Contact from "./Contact";
 import Resume from "./Resume";
-import { Route, Routes } from "react-router-dom";
+// import { Route, Routes } from "react-router-dom";
 
 function Content() {
   return (
