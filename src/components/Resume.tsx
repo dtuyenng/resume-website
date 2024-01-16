@@ -91,11 +91,6 @@ function Resume() {
           </div>
         </div>
       </div>
-      <div className="experience_card">
-        <h3 className="experience_card_title">Experience (expand)</h3>
-
-        <img src="portfolio/timeline.png" alt="" />
-      </div>
     </div>
   );
 }

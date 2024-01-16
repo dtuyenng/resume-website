@@ -308,8 +308,49 @@ html {
   margin-top: 2rem;
 }
 
-/********************** Portfolio *********************/
+/********************** Timeline *********************/
 
+.timeline__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.timeline__border {
+  position: relative;
+  width: 70%;
+  border-left: 2px solid white;
+  padding-left: 1rem;
+}
+
+.timeline__dot {
+  position: absolute;
+  background-color: white;
+  width: 11px;
+  height: 11px;
+  left: -14px;
+  transform: translateX(7px);
+  border-radius: 50%;
+}
+
+.timeline__item {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.335);
+  padding: 0.8rem;
+  border-radius: 20px;
+}
+
+.timeline__date {
+  position: absolute;
+  left: -90px;
+  top: 5px;
+}
+
+.timeline__desc {
+}
 /********************** Footer ***********************/
 #footer {
   border-bottom-right-radius: 10px;
