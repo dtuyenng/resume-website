@@ -9,8 +9,6 @@ function App() {
       <Header></Header>
       <Content></Content>
       <Experience></Experience>
-
-      {/* <Footer></Footer> */}
     </div>
   );
 }
