@@ -2,6 +2,7 @@
   --main-color: rgb(26, 26, 26);
   --text-color: rgb(255, 255, 255);
   --background-color: rgb(42, 103, 122);
+  --highlight-color: rgb(129, 168, 180);
   --secondary-color: rgb(241, 249, 255);
 }
 
@@ -135,9 +136,11 @@ html {
   border: 9px solid rgb(255, 255, 255);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.132);
   overflow: hidden;
-  border-top-right-radius: 50px;
+  border-top-right-radius: 100px;
   margin-left: 0.8rem;
+  margin-right: 2rem;
   padding: 1rem;
+  border-bottom-right-radius: 20px;
 }
 
 .my_card {
@@ -152,6 +155,7 @@ html {
   overflow: hidden;
   border-bottom-left-radius: 100px;
   padding: 1rem;
+  margin-left: 2rem;
 }
 
 .my_card .headshot {
@@ -226,7 +230,6 @@ html {
 
 .skill_card {
   padding-top: 0.2rem;
-  padding-left: 1rem;
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -240,7 +243,7 @@ html {
   justify-content: center;
   align-content: center;
   gap: 1rem;
-  padding: 0 2rem;
+  padding: 0 3rem;
   justify-content: space-around;
 }
 
@@ -295,7 +298,6 @@ html {
   height: 100%;
   min-height: 200px;
   padding-top: 0.2rem;
-  padding-left: 1rem;
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -304,25 +306,29 @@ html {
 }
 
 .experience_card_title {
-  margin-left: 1rem;
+  margin-left: 2rem;
   margin-top: 2rem;
 }
 
 /********************** Timeline *********************/
 
 .timeline__wrapper {
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  margin-left: 4rem;
+  color: white;
 }
 
 .timeline__border {
   position: relative;
-  width: 70%;
+  width: 80%;
   border-left: 2px solid white;
   padding-left: 1rem;
+  margin-left: 3rem;
 }
 
 .timeline__dot {
@@ -336,22 +342,35 @@ html {
 }
 
 .timeline__item {
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 10px;
-  background-color: rgba(255, 255, 255, 0.335);
-  padding: 0.8rem;
+  background-color: white;
+  font-size: 0.8rem;
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
   border-radius: 20px;
+  color: var(--background-color);
 }
 
 .timeline__date {
   position: absolute;
-  left: -90px;
-  top: 5px;
+  left: -100px;
+  top: -4px;
+  color: white;
 }
 
 .timeline__desc {
+  margin-top: 0.5rem;
+  margin-left: 0.2rem;
+}
+
+.timeline__title {
+  font-weight: bold;
+  text-align: left;
+  font-style: italic;
 }
 /********************** Footer ***********************/
+
 #footer {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
