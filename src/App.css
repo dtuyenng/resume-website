@@ -154,14 +154,14 @@ html {
   overflow: hidden;
   border-bottom-left-radius: 100px;
   margin-left: 2rem;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .my_card .headshot {
   height: 200px;
   width: 200px;
   overflow: hidden;
-  margin: -10px auto;
+  margin: -20px auto;
   border-radius: 50%;
   z-index: 100;
   border: 5px solid white;
@@ -179,7 +179,7 @@ html {
   height: 100px;
   background-color: white;
   margin: 0 auto;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   padding-left: 1rem;
 }
 .fullname span {
@@ -220,7 +220,8 @@ html {
 .links_card {
   background-color: white;
   text-align: right;
-  padding-right: 2rem;
+  padding-top: 0.8rem;
+  padding-right: 1rem;
   height: 60px;
 }
 
