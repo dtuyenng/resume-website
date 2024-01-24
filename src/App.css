@@ -2,6 +2,7 @@
   --main-color: rgb(26, 26, 26);
   --text-color: rgb(255, 255, 255);
   --background-color: rgb(42, 103, 122);
+  --highlight-color: rgb(129, 168, 180);
   --secondary-color: rgb(241, 249, 255);
 }
 
@@ -135,33 +136,42 @@ html {
   border: 9px solid rgb(255, 255, 255);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.132);
   overflow: hidden;
-  border-top-right-radius: 50px;
+  border-top-right-radius: 100px;
   margin-left: 0.8rem;
+  margin-right: 2rem;
   padding: 1rem;
+  border-bottom-right-radius: 20px;
 }
 
 .my_card {
-  background-color: white;
-  min-width: 350px;
+  background-color: var(--background-color);
+  min-width: 300px;
   display: flex;
   flex-direction: column;
-  width: 300px;
   height: 470px;
   color: var(--background-color);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.132);
   overflow: hidden;
   border-bottom-left-radius: 100px;
-  padding: 1rem;
+  margin-left: 2rem;
+  padding-top: 2rem;
 }
 
 .my_card .headshot {
-  height: 100%;
-  border: 1px solid green;
+  height: 200px;
+  width: 200px;
   overflow: hidden;
+  margin: -20px auto;
+  border-radius: 50%;
+  z-index: 100;
+  border: 5px solid white;
 }
 
 .my_card .headshot img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
 }
 
 .fullname {
@@ -169,8 +179,8 @@ html {
   height: 100px;
   background-color: white;
   margin: 0 auto;
-  padding-top: 1rem;
-  padding-left: 0.1rem;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
 }
 .fullname span {
   font-size: 1.4rem;
@@ -186,11 +196,10 @@ html {
 .education_card {
   width: 100%;
   display: flex;
-  color: var(--main-color);
+  color: var(--background-color);
   background-color: white;
   margin: 0 auto;
-  margin-top: 1rem;
-  padding-bottom: 1rem;
+  padding-left: 1rem;
 }
 .my_card .material-symbols-outlined {
   color: var(--background-color);
@@ -202,31 +211,34 @@ html {
   width: 100%;
   display: flex;
   flex-direction: row;
-  color: var(--main-color);
+  color: var(--background-color);
   background-color: white;
-  margin: 1px auto 0;
+  margin: 0 auto;
   padding-top: 1rem;
+  padding-left: 1rem;
 }
 .links_card {
-  margin-top: 1px;
   background-color: white;
-  text-align: center;
-  padding-top: 1.5rem;
-  height: 100%;
+  text-align: right;
+  padding-top: 0.8rem;
+  padding-right: 1rem;
+  height: 60px;
 }
 
 .links_card img:nth-child(1) {
-  width: 40px;
+  width: 30px;
 }
 .links_card img:nth-child(2) {
-  width: 70px;
+  width: 50px;
+}
+.links_card img:nth-child(3) {
+  width: 30px;
 }
 
 /*********************** SKILLS ***********************/
 
 .skill_card {
   padding-top: 0.2rem;
-  padding-left: 1rem;
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -240,7 +252,7 @@ html {
   justify-content: center;
   align-content: center;
   gap: 1rem;
-  padding: 0 2rem;
+  padding: 0 3rem;
   justify-content: space-around;
 }
 
@@ -295,7 +307,6 @@ html {
   height: 100%;
   min-height: 200px;
   padding-top: 0.2rem;
-  padding-left: 1rem;
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -304,25 +315,29 @@ html {
 }
 
 .experience_card_title {
-  margin-left: 1rem;
+  margin-left: 2rem;
   margin-top: 2rem;
 }
 
 /********************** Timeline *********************/
 
 .timeline__wrapper {
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  margin-left: 4rem;
+  color: white;
 }
 
 .timeline__border {
   position: relative;
-  width: 70%;
+  width: 80%;
   border-left: 2px solid white;
   padding-left: 1rem;
+  margin-left: 3rem;
 }
 
 .timeline__dot {
@@ -336,22 +351,35 @@ html {
 }
 
 .timeline__item {
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 10px;
-  background-color: rgba(255, 255, 255, 0.335);
-  padding: 0.8rem;
+  background-color: white;
+  font-size: 0.8rem;
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
   border-radius: 20px;
+  color: var(--background-color);
 }
 
 .timeline__date {
   position: absolute;
-  left: -90px;
-  top: 5px;
+  left: -100px;
+  top: -4px;
+  color: white;
 }
 
 .timeline__desc {
+  margin-top: 0.5rem;
+  margin-left: 0.2rem;
+}
+
+.timeline__title {
+  font-weight: bold;
+  text-align: left;
+  font-style: italic;
 }
 /********************** Footer ***********************/
+
 #footer {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
